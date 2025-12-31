@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply | FresherConnect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">FresherConnect</a>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="bg-light py-4 text-center">
+  <div class="container">
+    <h2 class="fw-bold">Apply for Jobs & Internships</h2>
+    <p class="text-muted">Submit your details and start your career journey</p>
+  </div>
+</section>
+
+<!-- Main Content -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Left Info Panel -->
+      <div class="col-md-4">
+        <div class="card shadow-sm mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Why FresherConnect?</h5>
+            <ul class="list-unstyled">
+              <li>✔ Verified recruiters</li>
+              <li>✔ Fresher-friendly jobs</li>
+              <li>✔ Free to apply</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Support</h5>
+            <p class="mb-1">📧 support@fresherconnect.com</p>
+            <p>📞 +91 98765 43210</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Form Panel -->
+      <div class="col-md-8">
+        <div class="card shadow">
+          <div class="card-body">
+            <h4 class="mb-4">Candidate Application Form</h4>
+
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Highest Qualification</label>
+                  <select class="form-select">
+                    <option>Select</option>
+                    <option>B.Tech / BE</option>
+                    <option>B.Sc / BCA</option>
+                    <option>MCA / M.Tech</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Preferred Role</label>
+                  <select class="form-select">
+                    <option>Select</option>
+                    <option>Frontend Developer</option>
+                    <option>Java Developer</option>
+                    <option>Data Analyst</option>
+                    <option>Internship</option>
+                  </select>
+                </div>
+
+                <!-- Skills -->
+                <div class="col-12">
+                  <label class="form-label">Skills</label>
+                  <input type="text" class="form-control" placeholder="Eg: HTML, CSS, Java, Python">
+                </div>
+
+                <!-- About Yourself -->
+                <div class="col-12">
+                  <label class="form-label">About Yourself</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+
+                <!-- Resume Upload -->
+                <div class="col-12">
+                  <label class="form-label">Upload Resume</label>
+                  <input type="file" class="form-control">
+                </div>
+
+                <div class="col-12">
+                  <button type="button" class="btn btn-dark w-100"
+                    data-bs-toggle="offcanvas" data-bs-target="#successCanvas">
+                    Submit Application
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Offcanvas Success Message -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="successCanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Application Submitted</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>✅ Your application has been successfully submitted.</p>
+    <p>Our team will review your profile and contact you soon.</p>
+    <p class="fw-bold">Best of luck for your career! 🚀</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 FresherConnect | Careers for Freshers</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
